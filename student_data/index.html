@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Student Database</title>
+  </head>
+  <body>
+    <div>
+      <button id="sort-low-to-high" onclick="lowhigh() ">Low to HGIgh</button>
+      <button id="sort-high-to-low" onclick="highlow()">High to Low</button>
+    </div>
+    <form id="form_data" onsubmit="studentdata(event)">
+    <input id="name" type="text" placeholder="Nmae">
+    <input id="batch" type="text" placeholder="Batch">
+    <input id="section" type="text" placeholder="Section">
+    <input id="eval_score" type="number" placeholder="Evaluation Score">
+    <input id="image" type="text" placeholder="Image">
+    <input type="submit" id="add_student">
+  </form>
+  <div id="container"></div>
+
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
